@@ -4,7 +4,7 @@ NombresParaNinos.com
 
 **What is the goal of the project?**
 + To make money. :)
-  + There's 3M google searches for name-related keywords. There are no specialized web-apps to help people choose names. 
+  + There's 3M google searches for name-related keywords. There are no specialized web-apps to help people choose names.
 + To create a web-based app where spanish-speaking people can conveniently look-up names and their meanings,
 visualize the name with the middle name and last name and create lists with their favorite names.
 
@@ -52,6 +52,4 @@ Parents expecting children Googling for name ideas on their mobile phones for th
 + Rails and API
 
 **What does success look like for this project? What does done mean?**
-Project meets Primary Requirements
-
-**Creat a Trello board in which you decompose the tasks and deliverables of the project.**
++ MVP will be done when a user can create and review name lists that contain names with first, middle and last names.
