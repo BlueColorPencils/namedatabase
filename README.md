@@ -3,7 +3,9 @@
 NombresParaNinos.com
 
 **What is the goal of the project?**
-To create a web-based app where people can conveniently look-up names and their meanings,
++ To make money. :)
+  + There's 3M google searches for name-related keywords. There are no specialized web-apps to help people choose names. 
++ To create a web-based app where spanish-speaking people can conveniently look-up names and their meanings,
 visualize the name with the middle name and last name and create lists with their favorite names.
 
 ##GUEST
