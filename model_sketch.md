@@ -4,7 +4,7 @@
 + email
 + password
 + baby_last_name
-+ favorited_names = [] <= ids of names they have added to favorites 
+# favorited_names = [] <= ids of names they have added to favorites 
 
 ##NAMES
 + id
@@ -16,9 +16,10 @@
 
 ##BABY_NAMES
 + id
+# list_id
 + first_name => point to name object
 + middle_name => point to name object
-+ last_name = @user.baby_last_name
+#+ last_name = @user.baby_last_name
 
 ##LISTS
 + id
