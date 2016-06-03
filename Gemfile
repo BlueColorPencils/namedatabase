@@ -19,7 +19,7 @@ gem 'omniauth'
 gem 'httparty'
 gem 'simplecov', :require => false, :group => :test
 gem 'omniauth-oauth2', '~> 1.3.1'
-
+gem 'omniauth-facebook'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
