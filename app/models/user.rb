@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
       user.first_name = auth_hash["info"]["first_name"]
       user.last_name = auth_hash["info"]["last_name"]
       user.image = auth_hash["info"]["image"]
-      user.url = auth_hash["info"]["urls"]["facebook"]
+      user.url = auth_hash["info"]["urls"]["Facebook"]
       if user.save
         return user
       else

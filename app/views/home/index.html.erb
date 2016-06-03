@@ -7,11 +7,11 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <ul>
-        <li><strong>Name:</strong> <%= current_user.name %></li>
+        <li><strong>Nombre:</strong> <%= current_user.first_name %></li>
+        <li><strong>Apellido:</strong> <%= current_user.last_name %></li>
         <li><strong>Provider:</strong> <%= current_user.provider %></li>
         <li><strong>uID:</strong> <%= current_user.uid %></li>
-        <li><strong>Location:</strong> <%= current_user.location %></li>
-        <li><strong>Avatar URL:</strong> <%= current_user.image_url %></li>
+        <li><strong>Avatar URL:</strong> <%= current_user.image %></li>
         <li><strong>URL:</strong> <%= current_user.url %></li>
       </ul>
     </div>
