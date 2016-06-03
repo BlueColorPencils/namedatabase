@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     put :favorite, on: :member
   end
 
+  get "/auth/:provider/callback" => "sessions#create"
+  delete '/logout', to: 'sessions#destroy'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
