@@ -1,0 +1,30 @@
+
+<h1>Agregar Nuevo Nombre</h1>
+
+<%= form_for @name do |f| %>
+  <p><%= f.label :name %>
+  <%= f.text_field :name %></p>
+
+  <p><%= f.label :gender %>
+  <%= f.text_field :gender %></p>
+
+  <p><%= f.label :origin %>
+  <%= f.text_field :origin %></p>
+
+  <p><%= f.label :meaning %>
+  <%= f.text_field :meaning %></p>
+
+  <p><%= f.label :diminutives %>
+  <%= f.text_area :diminutives %></p>
+
+  <p><%= f.label :famous %>
+  <%= f.text_area :famous %></p>
+
+  <p><%= f.label :royalty %>
+  <%= f.text_area :royalty %></p>
+
+  <p><%= f.label :interesting %>
+  <%= f.text_area :interesting %></p>
+
+  <%= f.submit %>
+  <% end %>

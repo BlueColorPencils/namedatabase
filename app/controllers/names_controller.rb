@@ -1,5 +1,19 @@
 class NamesController < ApplicationController
 
+  def new
+    @name = Name.new
+  end
+
+  def create
+    @name = Name.new(name_params[:name])
+
+    if(@name.save)
+      redirect_to name_path(@name.id)#redirect in case user tries to post another form - brings them to entered view
+    else
+      render :new
+    end
+  end
+
   def favorite
     # Add and remove favorite names
     # for current_user

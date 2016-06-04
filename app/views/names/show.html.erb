@@ -1,7 +1,15 @@
 
-El significado del nombre <%= @name.name %>
-
+<h2>El significado del nombre <%= @name.name %></h2>
 <% if current_user %>
   <%= link_to "Añadir a Favoritos",   favorite_name_path(@name, type: "favorite"), method: :put %>
   <%= link_to "Eliminar de Favoritos", favorite_name_path(@name, type: "unfavorite"), method: :put %>
 <% end %>
+
+Nombre: <%= @name.name%>
+Origen: <%= @name.origin%>
+Género: <%= @name.gender%>
+Significado: <%= @name.meaning%>
+Nombres cortos: <%= @name.diminutives%>
+Famosos: <%= @name.famous%>
+Realeza: <%= @name.royalty%>
+Datos interesantes: <%= @name.interesting%>
