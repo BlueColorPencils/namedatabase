@@ -1,0 +1,7 @@
+<h1> Lista de Nombres: </h1>
+
+<%= link_to "Agregar Nombre", new_name_path %>
+
+<% @names.each do |name| %>
+  <%= link_to name.name, name_path(name.id) %>
+<% end %>

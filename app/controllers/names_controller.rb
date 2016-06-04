@@ -1,17 +1,24 @@
 class NamesController < ApplicationController
 
+  def index
+    @names = Name.all
+  end
+
   def new
     @name = Name.new
   end
 
   def create
-    @name = Name.new(name_params[:name])
-
+    @name = Name.new(create_name_params[:name])
     if(@name.save)
       redirect_to name_path(@name.id)#redirect in case user tries to post another form - brings them to entered view
     else
       render :new
     end
+  end
+
+  def show
+    @name = Name.find(params[:id])
   end
 
   def favorite
@@ -31,5 +38,11 @@ class NamesController < ApplicationController
       redirect_to :back, notice: 'No sucedió nada.'
     end
 
+  end
+
+
+  private
+  def create_name_params
+    params.permit(name: [:name, :gender, :origin, :meaning, :diminutives, :famous, :royalty, :interesting]) #double check attributes
   end
 end
